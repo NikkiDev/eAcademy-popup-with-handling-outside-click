@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+h1,
+h2,
+h3,
+h4,
+button,
+p {
+  text-transform: capitalize;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+.container {
+  background-image: url('./assets/backgroundimg.jpg');
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.popup-container {
+  margin: 170px auto;
+  width: 40%;
+  height: 40%;
+}
+.prePopup {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 1.5rem;
+  margin-bottom: 100px;
+  .sale {
+    color: red;
+    font-size: 5rem;
+    font-style: italic;
+  }
+  .btn {
+    background-image: linear-gradient(
+      to right,
+      #ede574 0%,
+      #e1f5c4 51%,
+      #ede574 100%
+    );
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'poppins', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    letter-spacing: 10px;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    border: none;
+    color: black;
+
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+      color: red;
+    }
+  }
+  .agency {
+    padding: 50px;
+    text-align: center;
+    color: white;
+    h1 {
+      padding: 20px;
+    }
+    p {
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+
+.popup {
+  background: url('./assets/seaside.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  pointer-events: auto;
+  border-radius: 15px;
+  input {
+    height: 40px;
+    width: 300px;
+    color: #000;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      font-style: italic;
+    }
+  }
+  button {
+    background-color: #00917c;
+    color: #dedee0;
+    height: 40px;
+    width: 100px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    &:hover {
+      background-color: #025955;
+    }
+  }
+  h1 {
+    color: yellow;
+  }
+  h2 {
+    margin: 0 50px;
+    text-align: center;
+    color: white;
+  }
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(65, 175, 166, 0.4);
+  pointer-events: none;
+}
+.none {
+  pointer-events: none;
+}
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
