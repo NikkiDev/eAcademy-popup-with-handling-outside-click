@@ -16,7 +16,7 @@ p {
 }
 
 .container {
-  background-image: url('/public/assets/backgroundimg.jpg');
+  background-image: url('./assets/backgroundimg.jpg');
 
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -86,7 +86,7 @@ p {
 }
 
 .popup {
-  background: url('/public/assets/seaside.jpg');
+  background: url('./assets/seaside.jpg');
   background-size: cover;
   position: absolute;
   top: 25%;
